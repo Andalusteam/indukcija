@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: cursive; sans-serif;
+}
+
+/* BACKGROUND LOGO */
+.bg-logo {
+    position: fixed;
+    top: 80%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 400px;
+    opacity: 0.08;
+
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* BACK LINK */
+.back-link {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+/* CONTAINER */
+.contact-container {
+    text-align: center;
+    margin-top: 80px;
+}
+
+/* BLOCKS */
+.contact-block {
+    margin-bottom: 20px;
+}
+
+/* IMAGE */
+.contact-block img {
+    width: 350px;
+    border-radius: 10px;
+}

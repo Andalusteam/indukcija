@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDUKCIJA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<div class="follow-us">Pratite nas na: IG/FB/TIKTOK</div>
+<div class="name">Indukcija</div>
+<body>
+
+<!-- HERO SECTION -->
+<header class="hero">
+   <div class="slider">
+    <img src="img1.jpg">
+    <img src="img2.jpg">
+    <img src="img3.jpg">
+
+    <!-- duplicates for smooth loop -->
+    <img src="img1.jpg">
+    <img src="img2.jpg">
+    <img src="img3.jpg">
+</div>
+<img src="logoa1.png" class="logo" alt="Brand Logo">
+</header>
+
+<!-- MAIN CONTENT -->
+<main>
+ <div class="za1s2tod3a1ne">
+    <img src="za1s2tod3a1ne.jpg">
+    </div>
+    <!-- LEFT INFO SECTION -->
+    <section class="info">
+        <h2></h2>
+
+      <div class="hours">
+    <span>ponedjeljak 08-16</span><br>
+    <span>utorak 08-16</span><br>
+    <span>srijeda 08-16</span><br>
+    <span>četvrtak 08-16 </span><br>
+    <span>petak 08-16</span><br>
+    <span>subota 08-16</span><br>
+    <span>nedjelja ZATVORENO</span>
+</div>
+        <p><strong>Adresa:</strong> ULICA MATIJE GUPCA 90, ZABOK</p>
+
+        <!-- MAP -->
+        <div class="map">
+            <iframe 
+                src="https://maps.google.com/maps?q=Zabok&t=&z=13&ie=UTF8&iwloc=&output=embed">
+            </iframe>
+        </div>
+    </section>
+
+   <!-- SERVICES -->
+<section class="services">
+<h2 class="usluge-title">Usluge</h2>
+    <div class="service-card">
+        <div class="service-box">
+            <h3>Opcija 1:</h3>
+            <p>€-- (slike)</p>
+        </div>
+    </div>
+
+    <div class="service-card">
+        <div class="service-box">
+            <h3>Opcija 2:</h3>
+            <p>€-- (slike)</p>
+        </div>
+    </div>
+
+    <div class="service-card">
+        <div class="service-box">
+            <h3>Opcija 3:</h3>
+            <p>€-- (slike)</p>
+        </div>
+    </div>
+
+</section>
+    </section>
+
+    <!-- BOTTOM SECTION -->
+    <section class="bottom">
+
+    <div class="owners">
+
+
+    <img src="owner.jpg" class="owner-front">
+
+  
+
+</div>
+
+</div>
+       <div class="reviews">
+
+    <h2>Recenzije</h2>
+
+    <div class="reviews-grid">
+
+        <div class="review-card">
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>Odlična pomoć!</p>
+        </div>
+
+        <div class="review-card">
+            <p>⭐⭐⭐⭐☆</p>
+            <p>Odlični.</p>
+        </div>
+
+        <div class="review-card">
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>Preporučam!</p>
+        </div>
+
+        <div class="review-card">
+            <p>⭐⭐⭐⭐☆</p>
+            <p>Navratit ću opet,super je.</p>
+        </div>
+
+    </div>
+
+</div>
+
+    </section>
+
+</main>
+
+<footer>
+    <nav>
+        <a href="aboutus.html">O nama</a>
+       <a href="contact.html">Kontakt</a>
+    </nav>
+</footer>
+
+</body>
+</html>
+<script>
+let index = 0;
+const slider = document.querySelector(".slider");
+
+setInterval(() => {
+    index++;
+
+    slider.style.transform = "translateX(-" + (index * 100) + "%)";
+
+    if (index === 3) {
+        setTimeout(() => {
+            slider.style.transition = "none";
+            slider.style.transform = "translateX(0)";
+            index = 0;
+        }, 2000); // same as transition time
+    } else {
+        slider.style.transition = "2s ease";
+    }
+
+}, 4000);
+</script>
